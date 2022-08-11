@@ -53,5 +53,55 @@
   
   
   
+  <entry>
+    <title>Linux命令</title>
+    <link href="/2022/08/02/Linux%E5%91%BD%E4%BB%A4/"/>
+    <url>/2022/08/02/Linux%E5%91%BD%E4%BB%A4/</url>
+    
+    <content type="html"><![CDATA[<p>1、进入目录：cd<br>2、查看清单：ls、ll、l、ls -l<br>3、删除命令：rm -rf<br>4、vi 文字编辑器：vi xxx     i切换到输入模式，x删除当前光标所在处的字符，:切换到底线命令模式，q退出，w保存文件，wq保存并退出，q!退出不保存<br>5、关闭某个端口：sudo fuser -k 端口号&#x2F;tcp<br>6、后台运行Java程序：nohup java -jar xxxxx &amp;<br>7、查询程序：find -name xxxx<br>8、查看内存信息：top<br>9、压缩文件：tar -czvf xxx  xx   ，xxx表示压缩后的文件名，xx表示被压缩的文件名<br>10、解压文件：tar -xzvf xxxx<br>11、授权：chmod abc file     abc用数字表示，例如全部权限777，a代表文件所有者，b代表用户组，c代表其它用户。每个数字又代表不同的权限，总共是rwx，即读写执行权限，rwx 二进制表示是 111，即7，–x二进制是 001，即1，r–二级制表示100，即4，只读权限<br>12、添加用户：useradd  xxx<br>13、切换用户：su  xxx<br>14、列出文件系统的整体磁盘使用量：df<br>15、检查磁盘空间使用量：du<br>16、磁盘分区：fdisk<br>17、拷贝：cp fileName(要被拷贝的文件)   path(目标路径)<br>18、移动：mv fileName（要移动的文件） path（目标路径）<br>19、vi、vim中字符串替换：:%s&#x2F;s1&#x2F;s2&#x2F;g   用字符串s2替换每行的所有字符串s1<br>20、vi、vim中输入&#x2F;后面接字符串进行查找，使用n、N进行向上向下查找。<br>21、查看所有运行中的进程：ps aux | less，查看非root用户：ps -U root -u root -N，查看xx用户：ps -u xx<br>22、查看端口占用：netstat -tunlp | grep 端口号，lsof  -i:8080，查看所有端口：netstat -ntlp，查看某个进程，例如nginx ps -ef | grep nginx<br>23、查看日志最后几行：tail -n 20 xx<br>24、查看某个进程：ps -ef | grep  xxx<br>25、查看历史操作命令：history，查看某个具体的应用或者程序的历史操作命令：history | grep xx<br>26、grep命令：grep是一个文本搜索工具<br>①普通搜索：grep “xxx”(搜索内容) xxx(搜索文件)<br>②高亮查找：grep –color “xxx” xxx，将查找的字符高亮显示，显示成红色<br>③反查：grep -v “xxx”  xxx ，搜索的结果不包含xxx<br>④展示行号:grep -n “xxx” xxx 展示搜索的内容在第几行<br>⑤统计行数:grep -c “xxx” xxx显示包含xxx的有多少行<br>⑥显示匹配到的字符串所在的行及其后n行：grep -A n(代表数字，多少行) “xxx”  xxx，A指after<br>⑦显示匹配到的字符串所在的行及其前n行：grep -B n “xxx” xxx,B是before的缩写<br>⑧显示匹配到的字符串所在的行及其前后各n行：grep -C n “xxx” xxx，C是context的缩写<br>⑨不区分大小写:grep -i “xxx” xxx<br>⑩正则: grep ‘xxx（正则表达式）’ xxx<br>27、创建文件夹：mikdir fileName<br>28、创建文件：touch fileName</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Coding</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>编程</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>我的第一篇blog记录</title>
+    <link href="/2022/08/01/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87blog%E8%AE%B0%E5%BD%95/"/>
+    <url>/2022/08/01/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87blog%E8%AE%B0%E5%BD%95/</url>
+    
+    <content type="html"><![CDATA[<blockquote><p>从前的日色变得慢</p><p>车，马，邮件都慢</p><p>一生只够爱一个人</p></blockquote>]]></content>
+    
+    
+    <categories>
+      
+      <category>LOVE</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>情感</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
   
 </search>
